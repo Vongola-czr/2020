@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.container {
+    padding-bottom: 30px;
+}
+
+ul {
+    overflow: hidden;
+}
+
+.list-item {
+    width: 260px;
+    border: 1px solid #ccc;
+    float: left;
+    margin: 10px 10px;
+}
+
+.list-item .row {
+    margin: 0;
+}
+
+.list-item .title {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.list-item .title .breadcrumb {
+    height: 36px;
+    overflow: hidden;
+}
+
+.list-item .row h3 {
+    text-overflow: ellipsis;
+    /*有些示例里需要定义该属性，实际可省略*/
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /*规定超过两行的部分截断*/
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-all;
+    /*在任何地方换行*/
+}
+
+.list-item .row .price {
+    font-size: 30px;
+    color: red
+}
+
+.page {
+    height: 40px;
+    border: 1px solid skyblue;
+    width: 60%;
+    margin: auto;
+}
+
+.page p {
+    cursor: pointer;
+}
